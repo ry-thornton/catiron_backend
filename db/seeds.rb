@@ -12,7 +12,7 @@ Cat.create(name: "Also Definitely Not Garfield", password: "luvlasagna", email: 
 Follow.create(followed_id: 1, follower_id: 2)
 Follow.create(followed_id: 1, follower_id: 3)
 Follow.create(followed_id: 2, follower_id: 3)
-Follow.create(followed_id: 3, follower_id: 2)
+Follow.create(followed_id: 3, follower_id: 1)
 Meow.create(body: "I am a cat, Meow, Meow.", cat_id: 1)
 Meow.create(body: "I am a cat, Meow, Bark.", cat_id: 2)
 Meow.create(body: "I am a cat, Bark, Meow.", cat_id: 1)

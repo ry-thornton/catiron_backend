@@ -19,6 +19,14 @@ class CatsController < ApplicationController
         render json: cat
     end
 
+    def meowfeed
+        cat = Cat.find(params[:id])
+        catFollows = Follow.all.select { |follow| follow.follower_id == cat.id }.map{|follow| follow.followed_id}
+        wantedMeows = Meow.all.select{ |meow| catFollows.include?(meow.cat_id) }
+        
+        render json: wantedMeows
+    end
+
 
     def update
         cat = Cat.find(params[:id])
