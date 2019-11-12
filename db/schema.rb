@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_08_192845) do
+ActiveRecord::Schema.define(version: 2019_11_12_152302) do
 
   create_table "cats", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_11_08_192845) do
     t.string "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
   end
 
   create_table "follows", force: :cascade do |t|
@@ -34,6 +35,8 @@ ActiveRecord::Schema.define(version: 2019_11_08_192845) do
     t.integer "cat_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "likes"
+    t.string "username"
   end
 
 end
