@@ -5,6 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Cat.destroy_all()
+Follow.destroy_all()
+Meow.destroy_all()
+
 
 Cat.create(name: "Garfield Arbuckle", password: "luvlasagna", username: "garfield0", email: "garfield0@garfield.com", nickname: "0 Garfield", bio: " 0 I love lasagna and sleeping. I am fat and comical. Comedy.")
 Cat.create(name: "Not Garfield", password: "luvlasagna", username: "garfield1",  email: "garfield1@garfield.com", nickname: "1 Garfield", bio: " 1 I love lasagna and sleeping. I am fat and comical. Comedy.")
