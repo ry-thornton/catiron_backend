@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Cat.create(name: "Garfield Arbuckle", password: "luvlasagna", email: "garfield0@garfield.com", nickname: "0 Garfield", bio: " 0 I love lasagna and sleeping. I am fat and comical. Comedy.")
-Cat.create(name: "Not Garfield", password: "luvlasagna",  email: "garfield1@garfield.com", nickname: "1 Garfield", bio: " 1 I love lasagna and sleeping. I am fat and comical. Comedy.")
-Cat.create(name: "Also Definitely Not Garfield", password: "luvlasagna", email: "garfield2@garfield.com", nickname: "2 Garfield", bio: " 2 I love lasagna and sleeping. I am fat and comical. Comedy.")
+Cat.create(name: "Garfield Arbuckle", password: "luvlasagna", username: "garfield0", email: "garfield0@garfield.com", nickname: "0 Garfield", bio: " 0 I love lasagna and sleeping. I am fat and comical. Comedy.")
+Cat.create(name: "Not Garfield", password: "luvlasagna", username: "garfield1",  email: "garfield1@garfield.com", nickname: "1 Garfield", bio: " 1 I love lasagna and sleeping. I am fat and comical. Comedy.")
+Cat.create(name: "Also Definitely Not Garfield", password: "luvlasagna", username: "garfield2" , email: "garfield2@garfield.com", nickname: "2 Garfield", bio: " 2 I love lasagna and sleeping. I am fat and comical. Comedy.")
 Follow.create(followed_id: 1, follower_id: 2)
 Follow.create(followed_id: 1, follower_id: 3)
 Follow.create(followed_id: 2, follower_id: 3)
