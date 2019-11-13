@@ -1,4 +1,8 @@
+
 class CatsController < ApplicationController
+    skip_before_action :verify_authenticity_token
+
+    
     def index
         cats = Cat.all
         render json: cats
@@ -11,6 +15,10 @@ class CatsController < ApplicationController
         else
             render json: {errors: cat.errors.full_messages}, status: 403
         end
+    end
+
+    def new
+        
     end
 
     
