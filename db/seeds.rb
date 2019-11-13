@@ -14,9 +14,9 @@ not_garfield2 = Cat.create(name: "Also Definitely Not Garfield", password: "luvl
 not_garfield3 = Cat.create(name: "Also Definitely Not Garfield", password: "luvlasagna", username: "garfield2" , email: "garfield2@garfield.com", nickname: "2 Garfield", bio: " 2 I love lasagna and sleeping. I am fat and comical. Comedy.")
 
 
-Follow.create(followed_id: garfield.id , follower_id: not_garfield.id)
-Follow.create(followed_id: garfield.id, follower_id: not_garfield.id)
-Follow.create(followed_id: garfield.id, follower_id: kat_ness.id)
+Follow.create(followed_id: not_garfield.id , follower_id: garfield.id)
+Follow.create(followed_id: not_garfield2.id, follower_id: garfield.id)
+Follow.create(followed_id: not_garfield3.id, follower_id: garfield.id)
 Follow.create(followed_id: not_garfield3.id, follower_id: kat_ness)
 Follow.create(followed_id: garfield, follower_id: not_garfield2.id)
 Follow.create(followed_id: kat_ness, follower_id: garfield)
